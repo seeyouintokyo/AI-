@@ -1,14 +1,20 @@
-# 阿星AI书签 v1.1 🔖
+## 🤝 notice 
+- 作者：阿星AI工作室 阿星
+- 关键灵感来源：zhangjia
+如有问题或建议，欢迎：
+- 发送邮件至：[2248762751@qq.com]
+- 或联系wechat ：zuojialongxi
+- 社交账号：[https://www.xiaohongshu.com/user/profile/5df37dc40000000001000b98]
+------------
+ # 阿星AI书签 StarAI Bookmarks v1.1 🔖
+一个智能的 Chrome 书签管理扩展，帮你更好地保存和查找网页。
 
-一个革新性的 Chrome 扩展，将 AI 智能与书签管理完美结合，让您的网络收藏更智能、更高效。
+## ✨ 核心功能
 
-## ✨ 核心亮点
-
-- 🧠 **AI 智能标签**：基于 DeepSeek 大模型，智能理解页面内容，自动生成精准标签
-- ⚡️ **闪电搜索**：通过地址栏 `kb` 命令实现毫秒级书签检索，支持智能语义匹配
-- 🔐 **隐私优先**：纯本地化存储与运算，确保数据安全，无需担心隐私泄露
-- 🎯 **双模标签**：完美融合 AI 生成标签与用户自定义标签，打造个性化知识体系
-- 🌐 **中英双语**：全面支持中英文混合标签系统，无语言障碍
+- 🧠 **AI 辅助**：使用 AI 分析网页内容，自动生成标签（需要配置 API）
+- 🔍 **智能搜索**：在地址栏输入 `kb` 快速搜索书签，支持模糊匹配
+- 📝 **内容提取**：自动提取网页标题和主要内容，方便整理
+- 🏷️ **标签管理**：支持 AI 标签和手动标签，中英文无限制
 
 ## 🚀 快速开始
 
@@ -25,58 +31,47 @@
 1. 访问 [Deepseek Platform](https://platform.deepseek.com/) 获取 API Key
 2. 点击工具栏中的扩展图标
 3. 在设置页面输入您的 API Key
-4. 点击保存，然后刷新当前页面
-5. 现在就可以开始使用了！
+4. 点击保存，即可开始使用 AI 功能
 
-## 💡 使用指南
+> 注意：即使没有 API Key，您也可以使用基础的书签管理功能
 
-### 功能特点
-
-#### 简洁的用户界面
-- 📝 统一的内容编辑区域，支持查看和编辑
-- 🏷️ 用户输入的标签以绿色显示，区别于AI生成的标签
-
-#### AI 增强功能
-- 🤖 基于 DeepSeek API 的智能标签生成
-- 🎯 准确理解页面内容，提供相关标签建议
-- 🔍 支持中英文混合标签
-
-#### 使用方法
-1. 在任意网页点击扩展图标
-2. 在编辑区域查看和编辑内容，添加标签
-3. 点击"保存书签"完成保存
+## 💡 使用说明
 
 ### 保存书签
 
-1. 在想要保存的网页点击扩展图标
-2. 等待 AI 自动生成标签
-3. 根据需要编辑或添加自定义标签
-4. 点击保存完成书签添加
+1. 在想保存的网页点击扩展图标
+2. 扩展会自动提取网页标题和内容
+3. 如果配置了 API，AI 会自动生成标签
+4. 您也可以手动添加或修改标签
+5. 点击保存完成
 
 ### 搜索书签
 
 方式一：快捷搜索
 - 在地址栏输入 `kb` 空格
-- 输入搜索关键词
-- 从搜索结果中选择想要访问的书签
+- 输入关键词搜索
+- 支持 AI 智能匹配（需要 API）
+- 无 API 时使用本地搜索
 
 方式二：扩展面板
 - 点击扩展图标
 - 在搜索框输入关键词
-- 查看匹配的书签列表
+- 实时显示匹配结果
 
 ## 🛠️ 技术特性
 
-- 使用 Chrome Extension Manifest V3
-- 支持 AI 标签生成和语义搜索
-- 纯前端实现，数据存储在本地
-- 开源免费，可自定义扩展
+- Chrome Extension Manifest V3
+- AI 标签生成（需要 API）
+- 本地备用搜索功能
+- 自动内容提取
+- 本地数据存储
 
 ## 📝 注意事项
 
-- 首次使用需要配置 Deepseek API Key
-- 保存 API Key 后需要刷新页面才能生效
-- 所有数据保存在浏览器本地，请定期备份
+- AI 功能需要配置 Deepseek API Key
+- 无 API 时仍可使用基础功能
+- 所有书签数据存在本地
+- 建议定期备份数据
 
 ## 🤝 贡献
 
@@ -89,14 +84,106 @@ MIT License - 详见 LICENSE 文件
 ## 📝 更新日志
 
 ### v1.1
-- 新增地址栏快捷搜索功能
-- 优化 AI 响应速度
-- 改进标签生成算法
-- 添加 API Key 显示切换功能
+- 新增地址栏快捷搜索
+- 优化 AI 标签生成
+- 添加本地备用功能
+- 改进搜索算法
 - UI/UX 优化升级
+## 🤝 Notice 
+- Author: AXing AI Studio (AXing)
+- Key Inspiration: zhangjia
+- Contact:
+  - Email: [2248762751@qq.com]
+  - WeChat: zuojialongxi
+  - Social Media: [https://www.xiaohongshu.com/user/profile/5df37dc40000000001000b98]
 
-## 🤝 反馈与支持
+------------
 
-如有问题或建议，欢迎通过以下方式联系：
-- 提交 Issue
-- 发送邮件至：[您的邮箱]
+# StarAI Bookmarks v1.1 🔖
+
+An intelligent Chrome extension for better bookmark management and searching.
+
+## ✨ Core Features
+
+- 🧠 **AI Assistance**: Analyze webpage content and auto-generate tags (API required)
+- 🔍 **Smart Search**: Quick bookmark search via address bar with `kb` command, supports fuzzy matching
+- 📝 **Content Extraction**: Auto-extract webpage titles and main content
+- 🏷️ **Tag Management**: Support both AI and manual tags, in Chinese and English
+
+## 🚀 Quick Start
+
+### Installation
+
+1. Download the extension
+2. Open Chrome, go to `chrome://extensions/`
+3. Enable "Developer mode"
+4. Click "Load unpacked"
+5. Select the extension directory
+
+### Configuration
+
+1. Visit [Deepseek Platform](https://platform.deepseek.com/) to get API Key
+2. Click the extension icon
+3. Enter your API Key in settings
+4. Save to start using AI features
+
+> Note: Basic bookmark management works without API Key
+
+## 💡 Usage Guide
+
+### Save Bookmarks
+
+1. Click extension icon on any webpage
+2. Extension auto-extracts title and content
+3. AI generates tags (if API configured)
+4. Add or modify tags manually
+5. Click save to finish
+
+### Search Bookmarks
+
+Method 1: Quick Search
+- Type `kb` space in address bar
+- Enter search keywords
+- Supports AI smart matching (API required)
+- Falls back to local search without API
+
+Method 2: Extension Panel
+- Click extension icon
+- Enter keywords in search box
+- Real-time results display
+
+## 🛠️ Technical Features
+
+- Chrome Extension Manifest V3
+- AI tag generation (API required)
+- Local search backup
+- Auto content extraction
+- Local data storage
+
+## 📝 Notes
+
+- AI features require Deepseek API Key
+- Basic features work without API
+- All bookmark data stored locally
+- Regular backups recommended
+
+## 🤝 Contribute
+
+Issues and Pull Requests welcome!
+
+## 📜 License
+
+MIT License - See LICENSE file
+
+## 📝 Changelog
+
+### v1.1
+- Added address bar quick search
+- Improved AI tag generation
+- Added local backup features
+- Enhanced search algorithm
+- UI/UX improvements
+  
+
+
+
