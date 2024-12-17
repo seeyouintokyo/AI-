@@ -1,7 +1,8 @@
 ## 🤝 notice 
-- 作者：阿星AI工作室 阿星
+- 作者：阿星AI工作室-阿星
 - 关键灵感来源：zhangjia
-如有问题或建议，欢迎：
+  
+- 如有问题或建议，欢迎：
 - 发送邮件至：[2248762751@qq.com]
 - 或联系wechat ：zuojialongxi
 - 社交账号：[https://www.xiaohongshu.com/user/profile/5df37dc40000000001000b98]
