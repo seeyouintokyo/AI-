@@ -174,7 +174,7 @@ Issues and Pull Requests welcome!
 
 ## 📜 License
 
-MIT License - See LICENSE file
+CC BY-NC- See LICENSE file
 
 ## 📝 Changelog
 
