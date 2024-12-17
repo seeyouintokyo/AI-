@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 350px;
+            padding: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .section {
+            padding: 12px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .section-title .icon {
+            font-size: 16px;
+        }
+
+        .api-section {
+            background: #fff3cd;
+            border-color: #ffeeba;
+        }
+
+        .bookmark-section {
+            background: #e9f7ef;
+            border-color: #d4edda;
+        }
+
+        input[type="text"], 
+        input[type="password"], 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .status {
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .tags {
+            margin-top: 8px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin: 4px;
+            font-size: 12px;
+        }
+
+        .user-tag {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .remove-tag {
+            margin-left: 4px;
+            cursor: pointer;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .remove-tag:hover {
+            color: #dc3545;
+        }
+
+        .api-key-container {
+            position: relative;
+        }
+
+        .toggle-visibility {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            color: #6c757d;
+        }
+
+        .toggle-visibility:hover {
+            color: #343a40;
+        }
+
+        .hint {
+            font-size: 12px;
+            color: #856404;
+            margin-top: 8px;
+        }
+
+        .hint a {
+            color: #533f03;
+            text-decoration: underline;
+        }
+
+        .hint a:hover {
+            color: #533f03;
+            text-decoration: none;
+        }
+
+        .tag-input {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #fff;
+        }
+
+        .tag-input:focus {
+            outline: none;
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+
+        #description {
+            width: 100%;
+            margin-bottom: 8px;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- API Key 配置部分 -->
+        <div class="section api-section">
+            <div class="section-title">
+                <span class="icon">🔑</span> API Key 配置
+            </div>
+            <div class="api-key-container">
+                <input type="password" id="apiKey" placeholder="请输入 API Key">
+                <button id="toggleVisibility" class="toggle-visibility">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                </button>
+            </div>
+            <button id="saveApiKey">保存</button>
+            <div id="apiKeyStatus" class="status"></div>
+            <div class="hint">
+                首次使用需要保存 API Key 并刷新页面。<br>
+                获取 Key: <a href="https://platform.deepseek.com/" target="_blank">https://platform.deepseek.com/</a>
+            </div>
+        </div>
+
+        <!-- 书签操作部分 -->
+        <div class="section bookmark-section">
+            <div class="section-title">
+                <span class="icon">📝</span> 添加描述
+            </div>
+            <input type="text" id="title" style="display: none;">
+            <input type="text" id="url" style="display: none;">
+            <textarea id="description" placeholder="输入内容（可选）"></textarea>
+            <button id="saveBookmark">保存书签</button>
+            <div id="bookmarkStatus" class="status"></div>
+            <div id="tags" class="tags"></div>
+        </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+</body>
+</html>

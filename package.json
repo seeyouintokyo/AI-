@@ -1,0 +1,7 @@
+{
+  "name": "axing-ai-bookmarks",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered bookmark management tool",
+  "main": "test_api.js"
+}
