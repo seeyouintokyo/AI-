@@ -78,9 +78,6 @@
 
 欢迎提交 Issue 和 Pull Request！
 
-## 📜 许可证
-
-MIT License - 详见 LICENSE 文件
 
 ## 📝 更新日志
 
@@ -90,13 +87,75 @@ MIT License - 详见 LICENSE 文件
 - 添加本地备用功能
 - 改进搜索算法
 - UI/UX 优化升级
-## 🤝 Notice 
+
+## 📜 License
+
+## 许可证
+本项目采用 [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) 许可协议。
+
+### 许可说明
+- **署名（Attribution）**：您必须给出适当的署名，提供许可证的链接，并标明是否进行了修改。
+- **非商业性使用（NonCommercial）**：您不得将本项目用于商业目的。
+
+### 禁止事项
+- 禁止将本项目用于任何商业用途。
+- 未经许可，不得将本项目用于盈利或其他商业活动。
+
+### 更多信息
+有关许可证的详细信息，请参阅 [LICENSE](LICENSE) 文件。
+[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## 署名要求
+如果您使用了本项目的内容，请提供以下署名信息：
+- 项目名称：[项目名称]
+- 作者：[你的名字或用户名]
+- 许可证链接：[https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## 使用示例
+以下是一些合法使用本项目的示例：
+1. **学术研究**：将本项目用于学术论文或研究报告中，需注明来源并遵守非商业性使用要求。
+2. **开源项目**：将本项目集成到其他开源项目中，需遵守署名要求和非商业性使用限制。
+3. **个人学习**：将本项目用于个人学习或教学，无需额外许可。
+
+### 禁止示例
+以下是一些禁止的使用方式：
+1. **商业产品**：将本项目用于开发商业软件或服务。
+2. **盈利活动**：将本项目用于任何盈利活动，如销售、广告或赞助。
+
+## 常见问题
+### Q: 我可以将本项目用于商业用途吗？
+A: 不可以。本项目采用 CC BY-NC 4.0 许可协议，明确禁止商业用途。
+
+### Q: 我需要如何署名？
+A: 您需要提供项目名称、作者信息和许可证链接。
+
+### Q: 我可以修改本项目的内容吗？
+A: 可以，但您必须遵守署名要求，并标明修改内容。
+
+## 📝 Changelog
+
+  
+
+
+
+
+
+
+# 🤝 Notice 
 - Author: AXing AI Studio (AXing)
 - Key Inspiration: zhangjia
 - Contact:
   - Email: [2248762751@qq.com]
   - WeChat: zuojialongxi
   - Social Media: [https://www.xiaohongshu.com/user/profile/5df37dc40000000001000b98]
+
+### v1.1
+- Added address bar quick search
+- Improved AI tag generation
+- Added local backup features
+- Enhanced search algorithm
+- UI/UX improvements
+
 
 ------------
 
@@ -174,17 +233,45 @@ Issues and Pull Requests welcome!
 
 ## 📜 License
 
-CC BY-NC- See LICENSE file
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license.
 
-## 📝 Changelog
+### License Details
+- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NonCommercial**: You may not use the project for commercial purposes.
 
-### v1.1
-- Added address bar quick search
-- Improved AI tag generation
-- Added local backup features
-- Enhanced search algorithm
-- UI/UX improvements
-  
+### Prohibitions
+- The project may not be used for any commercial purposes.
+- Unauthorized use for profit or other commercial activities is prohibited.
 
+### More Information
+For detailed information about the license, please refer to the [LICENSE](LICENSE) file.
+[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## Attribution Requirements
+If you use the content of this project, please provide the following attribution information:
+- Project Name: [Project Name]
+- Author: [Your Name or Username]
+- License Link: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## Usage Examples
+Here are some examples of legal uses of this project:
+1. **Academic Research**: Use this project in academic papers or research reports, citing the source and adhering to the non-commercial use requirement.
+2. **Open Source Projects**: Integrate this project into other open-source projects, complying with the attribution requirements and non-commercial use restrictions.
+3. **Personal Learning**: Use this project for personal learning or teaching without additional permission.
+
+### Prohibited Examples
+Here are some prohibited uses:
+1. **Commercial Products**: Use this project to develop commercial software or services.
+2. **Profit Activities**: Use this project for any profit-making activities, such as sales, advertising, or sponsorship.
+
+## Frequently Asked Questions
+### Q: Can I use this project for commercial purposes?
+A: No. This project is licensed under the CC BY-NC 4.0 license, which explicitly prohibits commercial use.
+
+### Q: How do I provide attribution?
+A: You need to provide the project name, author information, and a link to the license.
+
+### Q: Can I modify the content of this project?
+A: Yes, but you must comply with the attribution requirements and indicate any modifications made.
 
 
